@@ -1,0 +1,70 @@
+#data-diri {
+    #deskripsi {
+        display: flex;
+        align-items: center;
+        .foto-diri {
+            width: 20%;
+            height: 20%;
+            border-radius: 50%;
+        }
+        .deskripsi-diri {
+            margin: 2rem;
+        }
+    }
+}
+
+#pendidikan {
+    .kuliah {
+        border-style: solid;
+        display: flex;
+        .kuliah-desc {
+            margin: 10px;
+            padding: 5px;
+            border-style: solid;
+        }
+        img {
+            margin: 10px;
+            padding: 5px;
+            border-style: solid;
+            width: 10%;
+            height: 10%;
+        }
+    }
+    img {
+        width: 20%;
+        height: 20%;
+    }
+}
+
+#prestasi {
+    img {
+        width: 20%;
+        height: 20%;
+    }
+}
+
+#film {
+    .list-film {
+        display: flex;
+        justify-content: space-between; /* Distributes the items evenly across the container */
+        align-items: center; /* Aligns items vertically in the center */
+        margin: 20px auto;
+        padding: 10px;
+        border-bottom: 1px solid #ccc;
+        max-width: 1200px;
+        .list-film {
+            text-align: center;
+            flex: 1;
+            img {
+                // max-width: 100%;
+                height: 100px;
+                width: 80px;
+                display: block;
+                margin: 0 auto 10px;
+            }
+            h3 {
+                font-weight: bold;
+            }
+        }
+    }
+}
