@@ -1,63 +1,67 @@
-#data-diri #deskripsi {
-  display: flex;
+* {
+  overflow-x: hidden;
+}
+
+body {
+  margin: 50px;
+}
+
+#data-diri {
   align-items: center;
 }
-#data-diri #deskripsi .foto-diri {
-  width: 20%;
-  height: 20%;
-  border-radius: 50%;
-}
-#data-diri #deskripsi .deskripsi-diri {
-  margin: 2rem;
-}
-
-#pendidikan .kuliah {
-  border-style: solid;
+#data-diri .deskripsi {
   display: flex;
-}
-#pendidikan .kuliah .kuliah-desc {
-  margin: 10px;
-  padding: 5px;
+  align-items: center;
+  justify-content: center;
   border-style: solid;
 }
-#pendidikan .kuliah img {
-  margin: 10px;
-  padding: 5px;
-  border-style: solid;
-  width: 10%;
-  height: 10%;
-}
-#pendidikan img {
+#data-diri .deskripsi .foto-diri {
   width: 20%;
   height: 20%;
+  border-radius: 10%;
+}
+#data-diri .deskripsi .deskripsi-diri {
+  margin: 50px;
+  border-style: solid;
+}
+#data-diri .kontak {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+#data-diri .kontak img {
+  max-width: 50px;
+  max-height: 50px;
+  width: auto;
+  height: auto;
 }
 
-#prestasi img {
-  width: 20%;
-  height: 20%;
+#pendidikan img {
+  width: 15%;
+  aspect-ratio: 1/1;
+  object-fit: contain;
+}
+
+#prestasi li {
+  display: flex;
+  align-items: center;
+  border-style: solid;
+  margin: 3px;
+}
+#prestasi li img {
+  width: 5%;
+  height: 5%;
 }
 
 #film .list-film {
   display: flex;
-  justify-content: space-between; /* Distributes the items evenly across the container */
-  align-items: center; /* Aligns items vertically in the center */
-  margin: 20px auto;
-  padding: 10px;
-  border-bottom: 1px solid #ccc;
-  max-width: 1200px;
+  align-items: center;
 }
-#film .list-film .list-film {
-  text-align: center;
-  flex: 1;
-}
-#film .list-film .list-film img {
-  height: 100px;
-  width: 80px;
-  display: block;
-  margin: 0 auto 10px;
-}
-#film .list-film .list-film h3 {
-  font-weight: bold;
+#film .list-film img {
+  width: 100%;
+  aspect-ratio: 1/1;
+  object-fit: contain;
 }
 
 /*# sourceMappingURL=output.css.map */
