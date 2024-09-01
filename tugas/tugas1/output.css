@@ -1,9 +1,15 @@
-* {
-  overflow-x: hidden;
-}
-
 body {
   margin: 50px;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Ubuntu";
+}
+
+p {
+  font-family: "Poppins";
 }
 
 #data-diri {
@@ -13,16 +19,18 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  border-style: solid;
 }
 #data-diri .deskripsi .foto-diri {
+  max-width: 200px;
+  max-height: 200px;
   width: 20%;
   height: 20%;
+  min-width: 10rem;
+  max-height: 20rem;
   border-radius: 10%;
 }
 #data-diri .deskripsi .deskripsi-diri {
   margin: 50px;
-  border-style: solid;
 }
 #data-diri .kontak {
   display: flex;
@@ -38,30 +46,78 @@ body {
 }
 
 #pendidikan img {
-  width: 15%;
+  width: 10%;
   aspect-ratio: 1/1;
   object-fit: contain;
 }
+#pendidikan .list-pendidikan {
+  margin: 0px 50px 0px 50px;
+}
+#pendidikan .list-pendidikan p {
+  color: rgb(91, 89, 89);
+}
+#pendidikan .list-pendidikan .logo {
+  text-align: right;
+}
+#pendidikan .list-pendidikan .logo img {
+  border-radius: 5px;
+  box-shadow: 0 1px 2px grey;
+}
 
-#prestasi li {
+#prestasi img {
+  width: 5%;
+  aspect-ratio: 1/1;
+  object-fit: contain;
+}
+#prestasi .list-prestasi div {
   display: flex;
   align-items: center;
-  border-style: solid;
-  margin: 3px;
 }
-#prestasi li img {
-  width: 5%;
-  height: 5%;
+#prestasi .list-prestasi div h2 {
+  margin-left: 15px;
+}
+
+#hobi .list-hobi {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 20px auto;
+}
+#hobi .list-hobi div {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  margin: 10px;
+  padding: 15px;
+  max-width: 300px;
+  text-align: center;
+}
+#hobi .list-hobi div img {
+  max-width: 100%;
+  border-radius: 5px;
 }
 
 #film .list-film {
   display: flex;
-  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 20px auto;
 }
-#film .list-film img {
-  width: 100%;
-  aspect-ratio: 1/1;
-  object-fit: contain;
+#film .list-film div {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  margin: 10px;
+  padding: 15px;
+  max-width: 300px;
+  text-align: center;
+}
+#film .list-film div img {
+  max-width: 100%;
+  border-radius: 5px;
+}
+#film .list-film div p {
+  margin: 15px 0;
+  font-size: 0.9em;
+  text-align: justify;
 }
 
 /*# sourceMappingURL=output.css.map */
