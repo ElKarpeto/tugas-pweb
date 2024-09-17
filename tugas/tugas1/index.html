@@ -4,7 +4,6 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Tugas 1 Biodata Diri</title>
-        <link rel="stylesheet" href="output.css" />
         <link
             rel="icon"
             href="assets/data-diri/foto-diri.jpg"
@@ -18,25 +17,154 @@
             rel="stylesheet"
             href="https://fonts.googleapis.com/css?family=Poppins"
         />
+        <style>
+            body {
+                margin: 50px;
+            }
+
+            h1,
+            h2,
+            h3 {
+                font-family: "Ubuntu";
+            }
+
+            p {
+                font-family: "Poppins";
+            }
+
+            hr {
+                height: 3px;
+                color: black;
+                background-color: black;
+            }
+
+            #data-diri {
+                align-items: center;
+            }
+            #data-diri .deskripsi {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            #data-diri .deskripsi .foto-diri img {
+                max-width: 200px;
+                max-height: 200px;
+                width: 20%;
+                height: 20%;
+                min-width: 10rem;
+                border-radius: 10%;
+            }
+            #data-diri .deskripsi .foto-diri h2 {
+                text-align: center;
+            }
+            #data-diri .deskripsi .deskripsi-diri {
+                margin: 50px;
+            }
+            #data-diri .kontak {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-top: 10px;
+            }
+            #data-diri .kontak img {
+                max-width: 50px;
+                max-height: 50px;
+                width: auto;
+                height: auto;
+            }
+
+            #pendidikan img {
+                width: 10%;
+                aspect-ratio: 1/1;
+                object-fit: contain;
+            }
+            #pendidikan .list-pendidikan {
+                margin: 0px 50px 0px 50px;
+            }
+            #pendidikan .list-pendidikan p {
+                color: rgb(91, 89, 89);
+            }
+            #pendidikan .list-pendidikan .logo {
+                text-align: right;
+            }
+            #pendidikan .list-pendidikan .logo img {
+                border-radius: 5px;
+                box-shadow: 0 1px 2px grey;
+            }
+
+            #prestasi img {
+                width: 5%;
+                aspect-ratio: 1/1;
+                object-fit: contain;
+            }
+            #prestasi .list-prestasi div {
+                display: flex;
+                align-items: center;
+            }
+            #prestasi .list-prestasi div h2 {
+                margin-left: 15px;
+            }
+
+            #hobi .list-hobi {
+                display: flex;
+                justify-content: space-around;
+                flex-wrap: wrap;
+                max-width: 1200px;
+                margin: 20px auto;
+            }
+            #hobi .list-hobi div {
+                box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+                margin: 10px;
+                padding: 15px;
+                max-width: 300px;
+                text-align: center;
+            }
+            #hobi .list-hobi div img {
+                max-width: 100%;
+                border-radius: 5px;
+            }
+
+            #film .list-film {
+                display: flex;
+                justify-content: space-around;
+                flex-wrap: wrap;
+                max-width: 1200px;
+                margin: 20px auto;
+            }
+            #film .list-film div {
+                box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+                margin: 10px;
+                padding: 15px;
+                max-width: 300px;
+                text-align: center;
+            }
+            #film .list-film div img {
+                max-width: 100%;
+                border-radius: 5px;
+            }
+            #film .list-film div p {
+                margin: 15px 0;
+                font-size: 0.9em;
+                text-align: justify;
+            }
+        </style>
     </head>
     <body>
         <div id="data-diri">
             <div class="deskripsi">
-                <img
-                    src="assets/data-diri/foto-diri.jpg"
-                    alt="Avatar"
-                    class="foto-diri"
-                />
+                <div class="foto-diri">
+                    <img src="assets/data-diri/foto-diri.jpg" alt="Avatar" />
+                    <h2>Sayyid Daffa ' Al Mubarok</h2>
+                </div>
                 <div class="deskripsi-diri">
                     <h1>DESKRIPSI DIRI</h1>
                     <hr />
                     <p>
-                        Saya Sayyid Daffa ' Al Mubarok mahasiswa Teknik
-                        Informatika ITS angkatan 2023. Saya mahasiswa yang
-                        sangat berminat dibidang analisis data, sains data,
-                        matematika dan fisika. Saya sangat suka untuk mencari
-                        kegiatan yang dapat menunjang minat dan bakat saya dalam
-                        belajar.
+                        Saya mahasiswa Teknik Informatika ITS angkatan 2023.
+                        Saya mahasiswa yang sangat berminat dibidang analisis
+                        data, sains data, matematika dan fisika. Saya sangat
+                        suka untuk mencari kegiatan yang dapat menunjang minat
+                        dan bakat saya dalam belajar.
                     </p>
                 </div>
             </div>
@@ -81,8 +209,6 @@
         <div id="pendidikan">
             <h1 id="judul-pendidikan">RIWAYAT PENDIDIKAN</h1>
             <hr />
-            <!-- setiap jenjang terdapat logo -->
-
             <table class="list-pendidikan">
                 <tr class="kuliah">
                     <td>
@@ -141,7 +267,6 @@
         <div id="prestasi">
             <h1 class="judul-prestasi">RIWAYAT PRESTASI</h1>
             <hr />
-            <!-- setiap prestasi berikan logo -->
             <div class="list-prestasi">
                 <div class="prestasi-1">
                     <img src="assets/prestasi/logo-osn.png" alt="logo" />

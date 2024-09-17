@@ -8,6 +8,12 @@ h3 {
   font-family: "Ubuntu";
 }
 
+hr {
+  height: 3px;
+  color: black;
+  background-color: black;
+}
+
 p {
   font-family: "Poppins";
 }
@@ -20,14 +26,16 @@ p {
   align-items: center;
   justify-content: center;
 }
-#data-diri .deskripsi .foto-diri {
+#data-diri .deskripsi .foto-diri img {
   max-width: 200px;
   max-height: 200px;
   width: 20%;
   height: 20%;
   min-width: 10rem;
-  max-height: 20rem;
   border-radius: 10%;
+}
+#data-diri .deskripsi .foto-diri h2 {
+  text-align: center;
 }
 #data-diri .deskripsi .deskripsi-diri {
   margin: 50px;
